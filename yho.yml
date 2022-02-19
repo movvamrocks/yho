@@ -1,0 +1,8 @@
+- name: Check domain SSL and registry expire date
+  id: check-domain
+  uses: codex-team/action-check-domain@v1
+  with:
+    url`: ${{ yahoo.com }}
+
+- run: echo 'SSL cert has ${{ steps.check-domain.outputs.ssl-expire-days-left }} days left'
+  if: ${{ steps.check-domain.outputs.ssl-expire-days-left }}
