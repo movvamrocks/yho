@@ -4,5 +4,6 @@
   with:
     url`: ${{ yahoo.com }}
 
+
 - run: echo 'SSL cert has ${{ steps.check-domain.outputs.ssl-expire-days-left }} days left'
   if: ${{ steps.check-domain.outputs.ssl-expire-days-left }}
