@@ -13,6 +13,8 @@ jobs:
         domain:
           - https://yahoo.com
           - https://google.com
+          - https://eebes.com
+
     steps:
       - name: Check domain SSL and registry expire date
         id: check-domain
